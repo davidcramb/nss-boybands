@@ -6,15 +6,17 @@ var vegetablesDiv = document.getElementById('vegetables');
 for (var i = 0; i < bands.length; i++) {
     var bandCount = bands[i];
     var vegetablesCount = vegetables[i];
-    console.log(bandCount);
-    console.log(vegetablesCount);
-    bandDiv.innerHTML += bandCount;
-    vegetablesDiv.innerHTML += vegetablesCount;
+    // console.log(bandCount);
+    // console.log(vegetablesCount);
+    var loopCount = [i + 1]; // shows amount of times the loop has run
+    console.log(loopCount);
+    bandDiv.innerHTML += "<p>" + bandCount + "</p>";
+    vegetablesDiv.innerHTML += "<p>" + vegetablesCount + "</p>";
 }
 
 
 // // The number of loops to perform (what if the array changes?)
-// var loopCount = 5;
+// var loopCount = 5; ! done
 
 // // Keep track of which band we're on in the loop
 // var currentBand = "";
